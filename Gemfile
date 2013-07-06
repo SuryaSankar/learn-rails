@@ -34,10 +34,19 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'high_voltage'
 gem 'gibbon'
+
 group :development do
- gem 'better_errors'
- gem 'quiet_assets'
+	gem 'sqlite3'
+	gem 'better_errors'
+	gem 'quiet_assets'
 end
+
+group :production do
+	gem 'pg'
+	gem 'thin'
+	gem 'rails_on_heroku'
+end
+
 
 
 
